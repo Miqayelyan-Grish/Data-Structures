@@ -1,46 +1,27 @@
-Data Structures.
-Description
+Data Structures
+Overview
 
-Data Structures are specialized ways of organizing and storing data in memory so that operations like access, insertion, deletion, and search can be performed efficiently.
+Data structures are systematic ways of organizing and storing data to enable efficient access and modification.
+They form the foundation of algorithm design and efficient software development.
 
-Choosing the correct data structure directly affects the performance and scalability of software applications.
+Understanding data structures means understanding:
 
-They are fundamental to:
+How data is stored in memory
 
-Algorithm design
+How operations affect performance
 
-Problem solving
+When to use each structure
 
-System design
+Classification
+Linear Structures
 
-Competitive programming
-
-Technical interviews
-
-Why Data Structures Matter
-
-Efficient data structures help to:
-
-Reduce time complexity
-
-Optimize memory usage
-
-Improve code clarity
-
-Handle large datasets effectively
-
-Every algorithm depends on how data is structured.
-
-Categories of Data Structures
-Linear Data Structures
-
-Elements are arranged sequentially.
+Data elements are arranged sequentially.
 
 Array
 
 Dynamic Array
 
-Linked List
+Linked List (Singly / Doubly)
 
 Stack
 
@@ -48,15 +29,15 @@ Queue
 
 Deque
 
-Non-Linear Data Structures
+Non-Linear Structures
 
-Elements are arranged hierarchically or interconnected.
+Data elements are arranged hierarchically or as networks.
 
 Tree
 
 Binary Tree
 
-Binary Search Tree (BST)
+Binary Search Tree
 
 Heap
 
@@ -66,93 +47,55 @@ Trie
 
 Hash-Based Structures
 
+Data is stored using hash functions for fast access.
+
 Hash Table
 
 Map
 
 Set
 
-Time Complexity Overview
-Data Structure	Access	Search	Insertion	Deletion
+Core Operations
+
+Most data structures support some variation of:
+
+Insertion
+
+Deletion
+
+Search
+
+Traversal
+
+Update
+
+The efficiency of these operations depends on the structure used.
+
+Complexity Summary
+Structure	Access	Search	Insert	Delete
 Array	O(1)	O(n)	O(n)	O(n)
 Linked List	O(n)	O(n)	O(1)*	O(1)*
-Stack	O(n)	O(n)	O(1)	O(1)
-Queue	O(n)	O(n)	O(1)	O(1)
-Hash Table	O(1)**	O(1)**	O(1)**	O(1)**
-Binary Search Tree	O(log n)***	O(log n)***	O(log n)***	O(log n)***
+Stack / Queue	O(n)	O(n)	O(1)	O(1)
+Hash Table (avg)	O(1)	O(1)	O(1)	O(1)
+Balanced BST	O(log n)	O(log n)	O(log n)	O(log n)
 
-* If reference is known
-** Average case
-*** Balanced BST
+* If node reference is known.
 
-🏗 Implemented Structures in This Repository
+Purpose of This Repository
 
- Array
+This directory contains custom implementations of fundamental data structures to:
 
- Dynamic Array
-
- Singly Linked List
-
- Doubly Linked List
-
- Stack
-
- Queue
-
- Binary Search Tree
-
- Heap
-
- Graph
-
-Common Operations
-
-Most data structures support:
-
-insert()
-
-delete()
-
-search()
-
-traverse()
-
-update()
-
-Relationship With Algorithms
-
-Data Structures + Algorithms = Efficient Programs
-
-Example:
-
-Binary Search requires a sorted array.
-
-Dijkstra’s Algorithm requires a priority queue (heap).
-
-BFS requires a queue.
-
-DFS requires a stack (or recursion).
-
-Goals of This Repository
-
-Practice implementing data structures from scratch
-
-Understand internal memory behavior
+Understand internal mechanics
 
 Analyze time and space complexity
 
-Prepare for technical interviews
+Strengthen problem-solving skills
 
-Improve problem-solving skills
+Build strong foundations in computer science
 
-Final Note
+All implementations are written from scratch without relying on built-in abstractions where possible.
 
-Understanding data structures deeply means:
+Philosophy
 
-Knowing how they work internally
-
-Knowing when to use them
-
-Knowing their time and space trade-offs
-
-Mastering them builds strong foundations in Computer Science.
+Efficient programs are built on correct data structures.
+Choosing the right structure is often more important than optimizing the algorithm.
