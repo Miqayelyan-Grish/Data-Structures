@@ -1,1 +1,47 @@
-Data Structures A data structure is a specialized format for organizing, processing, retrieving, and storing data. It provides a physical implementation of Abstract Data Types (ADTs) and defines the relationships between data elements. Data structures are the backbone of efficient software, determining how data is stored in memory and how quickly it can be accessed or modified. Why Data Structures Are Important Data structures are the foundation of efficient software engineering. They determine: Access Speed: How fast data can be retrieved.Memory Efficiency: How much space is required to store information.Algorithm Performance: Many algorithms only work efficiently with specific structures.Data Integrity: Ensuring relationships between data points remain consistent. Classification of Data Structures Linear Data Structures Elements are arranged sequentially, where each element is connected to its previous and next adjacent elements. Arrays: Fixed-size collection of elements accessed by index (\(O(1)\) access).Linked Lists: Nodes containing data and pointers to the next node.Stacks: Follows the LIFO (Last-In, First-Out) principle.Queues: Follows the FIFO (First-In, First-Out) principle. Non-Linear Data Structures Elements are organized hierarchically or interconnected in complex ways. Trees: Hierarchical structures consisting of a root and child nodes (e.g., Binary Search Tree, AVL Tree).Graphs: A collection of vertices (nodes) and edges (connections).Hash Tables: Stores key-value pairs for near-instant retrieval using a hashing function. Complexity Analysis (Average Case) Data Structure AccessSearchInsertionDeletionArray\(O(1)\)\(O(n)\)\(O(n)\)\(O(n)\)Stack/Queue\(O(n)\)\(O(n)\)\(O(1)\)\(O(1)\)Linked List\(O(n)\)\(O(n)\)\(O(1)\)\(O(1)\)Hash TableN/A\(O(1)\)\(O(1)\)\(O(1)\)Binary Search Tree\(O(\log n)\)\(O(\log n)\)\(O(\log n)\)\(O(\log n)\)Key Concepts Dynamic vs. Static: Static structures (Arrays) have fixed sizes; Dynamic structures (Linked Lists) grow during execution.Memory Allocation: Data structures can use contiguous memory (Arrays) or non-contiguous memory (Linked Lists).Abstract Data Types (ADT): The logical description of "what" the data can do, while the Data Structure is the "how." Key Takeaways Choosing the right structure can reduce time complexity from \(O(n)\) to \(O(\log n)\) or \(O(1)\).Data structures and algorithms are inseparable; one defines the "how" and the other the "what."Understanding memory management is essential for implementing custom structures.
+# Data Structures
+
+A data structure is a specialized format for organizing, processing, retrieving, and storing data. It provides a physical implementation of Abstract Data Types (ADTs) and defines the relationships between data elements.
+
+Data structures are the backbone of efficient software, determining how data is stored in memory and how quickly it can be accessed or modified.
+
+## Why Data Structures Are Important
+Data structures are the foundation of efficient software engineering. They determine:
+- **Access Speed:** How fast data can be retrieved.
+- **Memory Efficiency:** How much space is required to store information.
+- **Algorithm Performance:** Many algorithms only work efficiently with specific structures.
+- **Data Integrity:** Ensuring relationships between data points remain consistent.
+
+## Classification of Data Structures
+
+##Linear Data Structures
+Elements are arranged sequentially, where each element is connected to its previous and next adjacent elements.
+- **Arrays:** Fixed-size collection of elements accessed by index ($O(1)$ access).
+- **Linked Lists:** Nodes containing data and pointers to the next node.
+- **Stacks:** Follows the **LIFO** (Last-In, First-Out) principle.
+- **Queues:** Follows the **FIFO** (First-In, First-Out) principle.
+
+## Non-Linear Data Structures
+Elements are organized hierarchically or interconnected in complex ways.
+- **Trees:** Hierarchical structures consisting of a root and child nodes (e.g., Binary Search Tree, AVL Tree).
+- **Graphs:** A collection of vertices (nodes) and edges (connections).
+- **Hash Tables:** Stores key-value pairs for near-instant retrieval using a hashing function.
+
+## Complexity Analysis (Average Case)
+
+| Data Structure | Access | Search | Insertion | Deletion |
+| :--- | :--- | :--- | :--- | :--- |
+| **Array** | $O(1)$ | $O(n)$ | $O(n)$ | $O(n)$ |
+| **Stack/Queue** | $O(n)$ | $O(n)$ | $O(1)$ | $O(1)$ |
+| **Linked List** | $O(n)$ | $O(n)$ | $O(1)$ | $O(1)$ |
+| **Hash Table** | N/A | $O(1)$ | $O(1)$ | $O(1)$ |
+| **Binary Search Tree** | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ | $O(\log n)$ |
+
+## Key Concepts
+- **Dynamic vs. Static:** Static structures (Arrays) have fixed sizes; Dynamic structures (Linked Lists) grow during execution.
+- **Memory Allocation:** Data structures can use contiguous memory (Arrays) or non-contiguous memory (Linked Lists).
+- **Abstract Data Types (ADT):** The logical description of "what" the data can do, while the Data Structure is the "how."
+
+## Key Takeaways
+- Choosing the right structure can reduce time complexity from $O(n)$ to $O(\log n)$ or $O(1)$.
+- Data structures and algorithms are inseparable; one defines the "how" and the other the "what."
+- Understanding memory management is essential for implementing custom structures.
