@@ -1,17 +1,66 @@
-Binary Search Tree (BST)
-A Binary Search Tree is a node-based binary tree data structure which has the property that for every node, the values in the left subtree are less than the node's value, and the values in the right subtree are greater. It provides a physical implementation of the Sorted Set or Map ADT.
+# Binary Search Tree (BST)
 
-Binary Search Trees are the backbone of efficient searching and sorting, determining how data is ordered in memory to allow for logarithmic time operations.
-Why Binary Search Trees Are Important
-BSTs are the foundation of efficient data retrieval. They determine:
+A Binary Search Tree is a specialized node-based binary tree data structure. It provides a physical implementation of ordered Abstract Data Types (ADTs) and defines the relationships between parent and child nodes.
 
-Search Efficiency: How quickly a specific value can be found in a large dataset.
 
-Dynamic Sorting: Maintaining a sorted collection as elements are added or removed.
+BSTs are the backbone of efficient searching and sorting, determining how data is ordered in memory and how quickly it can be located or traversed.
 
-Range Queries: How easily one can find all elements within a specific range.
+---
 
-Hierarchical Organization: Representing data with a natural parent-child relationship.
-Classification of BST OperationsBasic OperationsElements are manipulated based on the BST property: $Value(Left) < Value(Node) < Value(Right)$.Search: Traverses the tree by comparing the target to the current node and moving left or right.Insertion: Places a new node at the appropriate leaf position to maintain sorted order.Deletion: Removes a node while restructuring to preserve the BST property (handling leaf, single-child, or two-child cases).Tree TraversalsThe process of visiting all nodes in a specific order, each serving a different purpose.In-Order: Left → Root → Right (Retrieves data in strictly increasing order).Pre-Order: Root → Left → Right (Used to create a copy of the tree).Post-Order: Left → Right → Root (Used for deleting the tree or evaluating expressions).Complexity Analysis (Average Case)
-OperationAverage CaseWorst Case (Skewed Tree)Access$O(\log n)$$O(n)$Search$O(\log n)$$O(n)$Insertion$O(\log n)$$O(n)$Deletion$O(\log n)$$O(n)$
-Key ConceptsBalanced vs. Skewed: A balanced tree maintains $O(\log n)$ height; a skewed tree (like a linked list) results in $O(n)$ performance.Recursive Structure: Most BST operations are naturally implemented using recursion due to the tree's fractal nature.Successor/Predecessor: Key concepts for deletion, involving the next largest or next smallest element in the tree.Key TakeawaysChoosing a BST can reduce search time from $O(n)$ in a linear list to $O(\log n)$.Data structures and algorithms are inseparable; the BST structure is what makes Binary Search possible on a dynamic dataset.Understanding tree height is essential for implementing performance-critical systems.
+# Why Binary Search Trees Are Important
+
+Data structures like BST are the foundation of efficient software engineering. They determine:
+
+* **Access Speed:** How fast a specific key can be retrieved (logarithmic time).
+* **Memory Efficiency:** How nodes are dynamically allocated in non-contiguous memory.
+* **Algorithm Performance:** Enables efficient binary search and sorted traversals.
+* **Data Integrity:** Ensuring the relative order between elements remains consistent.
+
+---
+
+# Classification of BST Operations
+
+## Core Operations
+Elements are processed based on the BST property: $Value(Left) < Value(Node) < Value(Right)$.
+
+* **Search:** Traverses the tree by comparing target values and branching left or right ($O(\log n)$).
+* **Insertion:** Finding the correct leaf position to maintain the structural property.
+* **Deletion:** Removing nodes while restructuring (handling leaf, single-child, or two-child cases).
+
+---
+
+# Tree Traversals
+
+Elements are visited in a specific order to retrieve or process information.
+
+
+* **In-Order:** Left → Root → Right (Returns elements in sorted, ascending order).
+* **Pre-Order:** Root → Left → Right (Used to create a clone or prefix expression of the tree).
+* **Post-Order:** Left → Right → Root (Used for deleting the tree or postfix expressions).
+
+---
+
+# Complexity Analysis (Average Case)
+
+| Operation | Average Case | Worst Case (Skewed) |
+| :--- | :--- | :--- |
+| **Access** | $O(\log n)$ | $O(n)$ |
+| **Search** | $O(\log n)$ | $O(n)$ |
+| **Insertion** | $O(\log n)$ | $O(n)$ |
+| **Deletion** | $O(\log n)$ | $O(n)$ |
+
+---
+
+# Key Concepts
+
+* **Balanced vs. Skewed:** Balanced trees (like AVL) stay at $O(\log n)$, while skewed trees degrade to linear time.
+* **Memory Allocation:** BSTs use non-contiguous memory (nodes and pointers) unlike standard arrays.
+* **Abstract Data Types (ADT):** The logical description of a "Sorted Set," where BST is the "how" it is built.
+
+---
+
+# Key Takeaways
+
+* Choosing a BST can reduce time complexity from $O(n)$ to $O(\log n)$ for search operations.
+* Data structures and algorithms are inseparable; the BST structure allows the Binary Search algorithm to function.
+* Understanding tree height management is essential for implementing efficient custom structures.
